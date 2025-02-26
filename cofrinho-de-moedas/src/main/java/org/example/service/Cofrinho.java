@@ -17,7 +17,7 @@ public class Cofrinho {
         }
     }
 
-    public double totalConvertido(){
+    public double totalConvertido() {
         double valorTotal = 0;
         for (Moeda moeda : moedas) {
             valorTotal += moeda.converter();
@@ -25,4 +25,7 @@ public class Cofrinho {
         return valorTotal;
     }
 
+    public void remover() {
+
+    }
 }

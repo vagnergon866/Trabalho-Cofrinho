@@ -9,4 +9,11 @@ public abstract class Moeda {
 
     public abstract void info();
     public abstract double converter();
+
+    @Override
+    public String toString() {
+        return "Moeda{" +
+                "valor=" + valor +
+                '}';
+    }
 }

@@ -18,8 +18,8 @@ public class Main {
             System.out.println("\nCofrinho:");
             System.out.println("1 - Adicionar Moeda");
             System.out.println("2 - Listar Moedas");
-            System.out.println("3 - Remover Moeda");
-            System.out.println("4 - Calcular total convertido");
+            System.out.println("3 - Calcular total convertido");
+            System.out.println("4 - Remover Moeda");
             System.out.println("0 - Encerrar");
             System.out.print("Escolha uma opção: ");
 
@@ -54,7 +54,11 @@ public class Main {
                     System.out.println("Lista de Moedas");
                     cofrinho.listagemMoedas();
                     break;
+                case 3:
+                    System.out.println("Cálculo total convertido: " + cofrinho.totalConvertido());
+                    break;
             }
         }
     }
 }
+

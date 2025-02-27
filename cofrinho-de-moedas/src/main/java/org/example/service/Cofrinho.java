@@ -3,6 +3,8 @@ package org.example.service;
 import org.example.moeda.Moeda;
 
 import java.util.ArrayList;
+import java.util.Iterator;
+
 
 public class Cofrinho {
     ArrayList<Moeda> moedas = new ArrayList<>();
@@ -25,7 +27,16 @@ public class Cofrinho {
         return valorTotal;
     }
 
-    public void remover() {
-
-    }
+   /* public void remover(int tipo, double valor) {
+        Iterator<Moeda> iterator = moedas.iterator();
+        while (iterator.hasNext()) {
+            Moeda moeda = iterator.next();
+            if (moeda.getValor() == valor) {
+                iterator.remove();
+                System.out.println("Moeda removida: " + tipo + " - " + valor);
+                return;
+            }
+        }
+        System.out.println("Moeda não encontrada: " + tipo + " - " + valor);
+    }*/
 }

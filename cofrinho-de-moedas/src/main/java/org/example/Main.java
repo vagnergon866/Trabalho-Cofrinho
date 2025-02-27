@@ -57,6 +57,13 @@ public class Main {
                 case 3:
                     System.out.println("Cálculo total convertido: " + cofrinho.totalConvertido());
                     break;
+
+                case 4:
+                    System.out.println("Digite o valor correspondente as moedas que quer remover: ");
+                    valor = teclado.nextDouble();
+                    cofrinho.remover(valor);
+                    System.out.println("Moedas com o valor de " + valor + " removidas com sucesso!");
+                    break;
             }
         }
     }

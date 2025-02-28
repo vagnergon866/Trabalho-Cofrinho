@@ -2,7 +2,6 @@ package org.example.moeda;
 
 public class Euro extends Moeda{
 
-
     public Euro(double valor) {
         super(valor);
     }

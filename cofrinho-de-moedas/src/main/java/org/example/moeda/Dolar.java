@@ -2,7 +2,6 @@ package org.example.moeda;
 
 public class Dolar extends Moeda{
 
-
     public Dolar(double valor) {
         super(valor);
     }

@@ -1,9 +1,9 @@
 package org.example;
 
-import org.example.moeda.Dolar;
-import org.example.moeda.Euro;
-import org.example.moeda.Moeda;
-import org.example.moeda.Real;
+import org.example.model.Dolar;
+import org.example.model.Euro;
+import org.example.model.Moeda;
+import org.example.model.Real;
 import org.example.service.Cofrinho;
 
 import java.util.Scanner;

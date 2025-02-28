@@ -1,6 +1,6 @@
 package org.example.service;
 
-import org.example.moeda.Moeda;
+import org.example.model.Moeda;
 
 import java.util.ArrayList;
 

@@ -1,4 +1,4 @@
-package org.example.moeda;
+package org.example.model;
 
 public class Dolar extends Moeda{
 

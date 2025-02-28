@@ -1,4 +1,4 @@
-package org.example.moeda;
+package org.example.model;
 
 public abstract class Moeda {
     public double valor;

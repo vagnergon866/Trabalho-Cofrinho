@@ -14,6 +14,7 @@ public class Main {
         Cofrinho cofrinho = new Cofrinho();
         int opcao = -1;
 
+        // Loop do menu principal
         while (opcao != 0) {
             System.out.println("-----------------------------");
             System.out.println("Cofrinho:");
@@ -26,12 +27,13 @@ public class Main {
             opcao = teclado.nextInt();
             System.out.println("-----------------------------");
 
+            // Verifica se a opção escolhida do Menu é válida
             if (opcao < 0 || opcao > 4) {
                 System.out.println("Opção inválida!");
             }
 
             switch (opcao) {
-                case 1:
+                case 1: // Adiciona uma nova moeda ao cofrinho
                     System.out.println("Escolha o tipo de Moeda:");
                     System.out.println("1 - Real");
                     System.out.println("2 - Dólar");
@@ -40,6 +42,7 @@ public class Main {
 
                     int tipoMoeda = teclado.nextInt();
 
+                    // Verifica se o tipo de moeda é válido
                     if (tipoMoeda < 1 || tipoMoeda > 3) {
                         System.out.println("Opção inválida!");
                         break;
@@ -48,25 +51,28 @@ public class Main {
                     System.out.print("Digite o valor: ");
                     double valor = teclado.nextDouble();
 
+                    // Criando o Objeto Moeda
                     Moeda moeda = null;
                     switch (tipoMoeda) {
                         case 1 -> moeda = new Real(valor);
                         case 2 -> moeda = new Dolar(valor);
                         case 3 -> moeda = new Euro(valor);
                     }
+
+                    //Adicionando a moeda ao cofrinho
                     cofrinho.adicionar(moeda);
                     break;
 
-                case 2:
+                case 2: // Lista as moedas adicionadas
                     System.out.println("Lista de Moedas: ");
                     cofrinho.listagemMoedas();
                     break;
 
-                case 3:
+                case 3: // Cálcula o valor total de moedas convertidas para real
                     System.out.printf("Valor total convertido: R$%.2f \n", cofrinho.totalConvertido());
                     break;
 
-                case 4:
+                case 4: // Remove todas as moedas que tenham o valor informado
                     System.out.println("Digite o valor correspondente as moedas que quer remover: ");
                     valor = teclado.nextDouble();
                     cofrinho.remover(valor);
